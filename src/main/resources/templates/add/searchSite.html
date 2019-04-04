@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>List WEB base URL</title>
+	  <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+
+</head>
+<body>
+	
+	<header>
+		<nav class="menu">
+		    <div class="nav-wrapper">
+		      <a href="/" class="brand-logo">Voltar</a>
+		    </div>
+		</nav>
+	
+	</header>
+	<table class="container">
+		<thead>
+			<tr>
+				<th>Base URL</th>
+				<th>Root</th>
+				<th>Data</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="site : ${sites}">
+				<td><a th:href="${(#mvc.url('SC#detailSite').arg(0, site.codigo)).build()}"><span th:text="${site.url}"></span></a></td>
+				<td><span th:text="${site.root}"></span></td>
+				<td><span th:text="${site.data}"></span></td>
+				<td><i class="material-icons left">delete</i></td>
+			</tr>
+		</tbody>
+	
+	</table>
+
+</body>
+
+
+</html>

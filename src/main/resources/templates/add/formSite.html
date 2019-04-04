@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>List WEB base URL</title>
+</head>
+<body>
+
+	<header>
+		<nav class="menu">
+		    <div class="nav-wrapper">
+		      <a href="/" class="brand-logo">Voltar</a>
+		    </div>
+		</nav>
+	
+	</header>
+	<th:block th:include="msgValid"></th:block>
+	<form method="post">
+		URL: <input type="text" value="http://fundacaoreviver.org.br/" name="url"/>
+		<button type="submit">Search</button>
+	
+	</form>
+
+</body>
+
+
+</html>
