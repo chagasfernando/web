@@ -54,7 +54,7 @@ public class SiteController {
 
 		for (String link : links) {
 
-			Future<String> process = services.processLinks(site.getCodigo(), link);
+			Future<String> process = services.processLinks(site, link);
 						
 		}
 		

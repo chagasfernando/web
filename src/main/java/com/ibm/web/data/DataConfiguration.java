@@ -19,7 +19,7 @@ public class DataConfiguration {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");			
 		dataSource.setUrl("jdbc:mysql://remotemysql.com:3306/XD1kvHksKf");
-		dataSource.setUsername("XD1kvHksKf"); 
+		dataSource.setUsername("XD1kvHksKf");	
 		dataSource.setPassword("33e79E5UiU");
         return dataSource;
         
